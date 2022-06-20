@@ -15,6 +15,8 @@ function validateInput(){
     }else{
         onSuccess(userName);
     }
+
+    //Email 
     if(email.value.trim()===""){
         onError(email,"Email cannot be empty");
     }else{
@@ -41,6 +43,7 @@ function validateInput(){
          onSuccess(conPwd);
     }
 
+    //Type of Use
     if(Type_use.value.trim()===""){
         onError(Type_use,"You must select something");
      }else{
@@ -48,6 +51,7 @@ function validateInput(){
      }
 
 
+    //accept terms and conditions
     if(!agree.checked)
     {
         document.getElementById('agree_chk_error').style.visibility='visible';
